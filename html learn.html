@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Information Form</title>
+</head>
+<body>
+    <h1><b>Student Information Form</b></h1>
+
+    <form>
+        <!-- Personal Information -->
+        <fieldset>
+            <legend>Personal Information</legend>
+
+            <label for="fullname">Full Name:</label>
+            <input type="text" id="fullname" name="fullname"><br><br>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email"><br><br>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password"><br><br>
+
+            <label for="dob">Date of Birth:</label>
+            <input type="date" id="dob" name="dob"><br><br>
+
+            <label for="bio">Short Bio:</label><br>
+            <textarea id="bio" name="bio" rows="4" cols="50" placeholder="Tell us about yourself..."></textarea>
+        </fieldset>
+
+        <br>
+
+        <!-- Gender -->
+        <fieldset>
+            <legend>Gender</legend>
+
+            <input type="radio" id="male" name="gender" value="male">
+            <label for="male">Male</label><br>
+
+            <input type="radio" id="female" name="gender" value="female">
+            <label for="female">Female</label><br>
+
+            <input type="radio" id="other" name="gender" value="other">
+            <label for="other">Other</label>
+        </fieldset>
+
+        <br>
+
+        <!-- Areas of Interest -->
+        <fieldset>
+            <legend>Areas of Interest</legend>
+
+            <input type="checkbox" id="webdev" name="interest" value="webdev">
+            <label for="webdev">Web Development</label><br>
+
+            <input type="checkbox" id="ai" name="interest" value="ai">
+            <label for="ai">Artificial Intelligence</label><br>
+
+            <input type="checkbox" id="ds" name="interest" value="ds">
+            <label for="ds">Data Science</label>
+        </fieldset>
+
+        <br>
+
+        <!-- Programming Skill Level -->
+        <fieldset>
+            <legend>Programming Skill Level</legend>
+            <label for="skill">Rate your skill (0 to 10):</label><br>
+            <input type="range" id="skill" name="skill" min="0" max="10">
+        </fieldset>
+
+        <br>
+
+        <!-- Upload Photo -->
+        <fieldset>
+            <legend>Upload Your Photo</legend>
+            <input type="file" name="photo" id="photo">
+        </fieldset>
+
+        <br>
+
+        <!-- Submit and Reset Buttons -->
+        <input type="submit" value="SUBMIT">
+        <input type="reset" value="RESET">
+    </form>
+</body>
+</html>
